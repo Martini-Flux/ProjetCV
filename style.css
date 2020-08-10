@@ -1,166 +1,296 @@
 body
 {
-font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	padding: 20px;
 }
 .me /* photo du cv */
 {
-border-radius: 50%;
-display: flex;
-justify-content:center;
-margin-top: 4em;
-margin-bottom: 2em;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	display: flex;
+	justify-content:center;
+	margin-top: 4em;
+	margin-bottom: 2em;
 }
 #colonne /*bloc de gauche*/
 {
-background-color: #A3C2F9;
-width: 21em;
-height: 95em;
-float: left;
-position: absolute;
-left: 0px;
-top: 0px;
+	background-color: #f8a825;
+	width: 28%;
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0px;
 }
 .loisirs /*icones*/
 {
-display: flex;
-justify-content: space-around;
-font-size: 4em;
+	display: flex;
+	justify-content: space-around;
+	font-size: 4em;
+	margin-bottom: 3%;
 }
 .fa-playstation
 {
-color: #323335;
+	color: #323335;
 }
 .fa-swimmer
 {
-color: #323335;
+	color: #323335;
 }
 .fa-spotify
 {
-color: #323335;
+	color: #323335;
 }
 .fa-black-tie
 {
-color: #A3C2F9;
-font-size: 1em;
-margin-right: 3%;
+	color: #f8a825;
+	font-size: 1em;
+	margin-right: 3%;
 }
 .fa-award
 {
-color: #A3C2F9;
-font-size: 1em;
-margin-right: 3%;
+	color: #f8a825;
+	font-size: 1em;
+	margin-right: 3%;
 }
 .fa-envelope
 {
-color: #A3C2F9;
-font-size: 1em;
-margin-right: 3%;
+	color: #f8a825;
+	font-size: 1em;
+	margin-right: 3%;
 }
 .fa-circle
 {
-color: #A3C2F9;
-margin-right: 2%;
+	color: #f8a825;
+	margin-right: 2%;
+}
+.fa-dot-circle-o
+{
+	color: #f8a825;
+	font-size: 20px;
 }
 /*fin des icones*/
+
 h3 /*titres de la colonne*/
 {
-color: #A3C2F9;
-font-size: larger;
-background-color: #323335;
-text-align: center;
-height: 2em;
-display: flex;
-flex-direction: column;
-justify-content: center;
+	color: #f8a825;
+	font-size: larger;
+	background-color: #323335;
+	text-align: center;
+	height: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .cat
 {
-margin-left: 11%;
+	margin-left: 11%;
+}
+.cat a
+{
+	text-decoration: none;
 }
 .cattxt
 {
-margin-left: 11%;
-display: flex;
-justify-content: center;
-height: 37em;
+	margin-left: 11%;
+	margin-right: 4%;
+	height: 39em;
 }
 #bloc
 {
-display: flex;
-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	width: 72%;
+	float: right;
 }
-#bloc1 /*titre*/
+#head /*titre*/
 {
-height: 15em;
-margin-left: 32%;
+	width: 72%;
+	float: right;
+	margin-bottom: 5%;
 }
 .nom
 {
-color: #A3C2F9;
+	color: #f8a825;
 }
-h2
+h2 /*titre principal*/
 {
-font-size: 4em;
-margin-top: 95px;
-margin-bottom: 3%;
+	font-size: 4em;
+	margin-top: 1em;
+	margin-left: 10%;
+	margin-bottom: 3%;
 }
-h4 /* titres du bloc central*/
+h1
 {
-margin-bottom: 2%;
-margin-top: 10%;
-font-size: 2em;
-margin-left: 33%;
+	margin-left: 10%;
 }
-#trait
+#bloc2
 {
-border-top: 2px solid #A3C2F9;
-width: 45em;
-margin-left: 33%; 
+	margin-top: 10%;
+}
+h4 /*titres du bloc central*/
+{
+	margin-bottom: 2%;
+	margin-top: 5%;
+	font-size: 2em;
+	margin-left: 8%;
+}
+.trait
+{
+	border-top: 2px solid #f8a825;
+	width: 45em;
+	margin-left: 8%; 
 }
 #traid
 {
-border-bottom: 2px solid #A3C2F9;
+	border-bottom: 2px solid #f8a825;
+
 }
 .description
 {
-display: flex;
-justify-content: space-around;
-margin-left: 20%;
-margin-top: 3%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3%;
 }
 .dates
 {
-width: 7em;
+	width: 7em;
+}
+#bas
+{
+	display: flex;
+	flex-direction: column;
+	float: right;
+	width: 72%;
+	margin-top: 5%;
+}
+.blocloisirs
+{
+	background-color: #f8a825;
+	width: 28%;
+	float: left;
+	position: absolute;
+	left: 0px;
+	margin-top: 9%;
 }
 .nomdir
 {
-font-size: 1em;
+	font-size: 1em;
 }
-/*responsive*/
-@media (min-width: 480px) and (max-width: 780px)
-{ 
-#colonne
+/* tablettes */
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
 {
-float: none; width: 30%; margin-left: 5%;
+	.trait
+	{
+		width: 30em;
+	}
+	.cattxt
+	{
+		height: 43em;
+	}
+	.loisirs
+	{
+		font-size: 3em;
+	}
+	.blocloisirs
+	{
+		margin-top: 13%;
+	}
 }
-@media (min-width: 731px) and (max-width: 979px)
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
 {
-#colonne
-{
-float: none; width: 30%; margin-left: 5%;
+	.trait
+	{
+		width: 30em;
+	}
 }
-@media (min-width: 768px) and (max-width: 1388px)
+
+/* telephones */
+
+@media(max-width: 767px)
 {
-#global
-{
-width: 100%;
-padding: 0px;
-}
-#colonne
-{
-width: 100%;
-}
-#bloc
-{
-width: 80%;
+	body
+	{
+		padding: 0%;
+	}
+	figure
+	{
+		display: flex;
+		justify-content: center;
+	}
+	{
+		width: auto;
+	}
+	h1
+	{
+		margin-left: 0%;
+	}
+	h2
+	{
+		margin-left: 0%;
+	}
+	h4
+	{
+		margin-left: 0%;
+	}
+	#head
+	{
+		width: 100%;
+		float: none;
+		text-align: center;
+		position: initial;
+		margin: auto;
+	}
+	#colonne
+		{
+			width: 100%;
+			float: none;
+			text-align: center;
+			position: initial;
+			margin: auto;
+		}
+	#bloc
+	{
+		width: 100%;
+		float: none;
+		position: initial;
+	}
+	#bas
+	{
+		float: none;
+		width: 100%;
+		position: initial;
+	}
+	.cat
+	{
+		margin: auto;
+	}
+	.cattxt
+	{
+		margin: auto;
+		height: 17em;
+	}
+	.trait
+	{
+		width: auto;
+		margin-left: 0%;
+	}
+	h4
+	{
+		text-align: center;
+	}
+	.blocloisirs
+	{
+		width: 100%;
+		position: initial;
+	}
 }

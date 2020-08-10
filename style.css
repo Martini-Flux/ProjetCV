@@ -181,8 +181,8 @@ h4 /*titres du bloc central*/
 /* tablettes */
 
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
+and (min-width: 768px)
+and (max-width: 1024px)
 and (orientation: portrait)
 {
 	.trait
@@ -204,8 +204,8 @@ and (orientation: portrait)
 }
 
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
+and (min-width: 768px)
+and (max-width: 1024px)
 and (orientation: landscape)
 {
 	.trait
@@ -226,9 +226,6 @@ and (orientation: landscape)
 	{
 		display: flex;
 		justify-content: center;
-	}
-	{
-		width: auto;
 	}
 	h1
 	{
